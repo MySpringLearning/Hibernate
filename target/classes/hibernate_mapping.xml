@@ -1,0 +1,13 @@
+<hibernate-mapping>
+	<class name="com.rahul.hibernate.Emp" table="emp">
+		<id name="empId" column="emp_no">
+			<generator class="assigned" />
+		</id>
+		<property name="birth_date" type="timestamp" column="birth_date"/>
+		<property name="first_name" type="string" column="first_name"/>
+		<property name="last_name" type="string" column="last_name"/>
+		<property name="gender" type="string" column="gender"/>
+		<property name="hire_date" type="timestamp" column="hire_date"/>
+	</class>
+
+</hibernate-mapping>
